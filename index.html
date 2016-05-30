@@ -1,8 +1,33 @@
-<<!DOCTYPE html>
 <html>
 <head>
 	<title>Aula Cinco</title>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
+	<script>
+		function minhafuncao(a,b){
+			return a + b +10;
+		}
+
+		function exercicio1 (nome) {
+			// alert ("Olá "+nome+ ", sua soma é a "+ minhafuncao(10,15)+"." ); 
+			// console.log ("Olá "+nome+ ", sua soma é a "+ minhafuncao(10,15)+"." ); 
+			// window.prompt ("Olá "+nome+ ", sua soma é a "+ minhafuncao(10,15)+"." ); 
+			var nome = window.prompt ("Quem é você: ");
+			
+			function condicao(){
+			 	if (nome.length>3){
+					return "Olá "+ nome + ". Você tem "+nome.length;
+				}else if(nome.length>0){
+					return "Você preencheu seu nome errado."
+				}else{
+					return "Voce não preencheu seu nome."
+				}
+			}
+			console.log(condicao() );
+		}
+		
+		exercicio1("");
+	</script>
 </head>
 <body>
 	<h1>Hello World!!!</h1>
